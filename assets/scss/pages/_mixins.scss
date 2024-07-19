@@ -1,0 +1,13 @@
+@mixin media($width){
+    @media(max-width:$width){
+        @content;
+    }
+}
+@mixin container($width){
+    width: 100%;
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
